@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>India - The Land of Diversity</title>
+<style>
+  /* Reset */
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: #f9f9f9;
+    color: #333;
+    line-height: 1.6;
+    max-width: 900px;
+    margin: 20px auto;
+    padding: 0 20px 40px 20px;
+  }
+  header {
+    background: linear-gradient(90deg, #ff9933, #138808, #ffffff);
+    padding: 25px 30px;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.15);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+  }
+  header h1 {
+    font-size: 3rem;
+    color: #000;
+    text-shadow:
+      1px 1px 0 #fff,
+      -1px -1px 0 #fff,
+      1px -1px 0 #fff,
+      -1px 1px 0 #fff;
+    flex: 1 1 auto;
+    min-width: 200px;
+  }
+  nav {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    flex: 2 1 auto;
+    justify-content: flex-end;
+  }
+  nav a {
+    text-decoration: none;
+    color: #138808;
+    background: #ffe6b3;
+    padding: 10px 18px;
+    border-radius: 20px;
+    font-weight: 700;
+    box-shadow: 1px 2px 6px rgba(0,0,0,0.15);
+    transition: background-color 0.3s ease, color 0.3s ease;
+    font-size: 1.1rem;
+    white-space: nowrap;
+  }
+  nav a:hover,
+  nav a:focus {
+    background-color: #138808;
+    color: white;
+    outline: none;
+  }
+  section {
+    background: white;
+    border-radius: 16px;
+    padding: 25px 30px;
+    box-shadow: 3px 6px 15px rgba(0,0,0,0.1);
+    margin-bottom: 40px;
+  }
+  section h2 {
+    color: #ff9933;
+    font-size: 2rem;
+    margin-bottom: 18px;
+    border-bottom: 3px solid #138808;
+    padding-bottom: 8px;
+    max-width: max-content;
+    font-weight: 900;
+  }
+  p {
+    font-size: 1.2rem;
+    color: #444;
+    margin-bottom: 18px;
+    max-width: 850px;
+  }
+  ul {
+    list-style-type: disc;
+    padding-left: 30px;
+    margin-top: 12px;
+    font-size: 1.15rem;
+    color: #444;
+    max-width: 850px;
+  }
+  ul li {
+    margin-bottom: 10px;
+  }
+  .section-content {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .text-block {
+    flex: 1 1 400px;
+    min-width: 280px;
+  }
+  .img-block {
+    flex: 1 1 400px;
+    min-width: 280px;
+    text-align: center;
+  }
+  img.responsive-img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 18px;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.15);
+    max-height: 320px;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+    cursor: pointer;
+  }
+  img.responsive-img:hover,
+  img.responsive-img:focus {
+    transform: scale(1.05);
+    outline: none;
+  }
+  footer {
+    text-align: center;
+    font-size: 1rem;
+    color: #888;
+    margin-top: 50px;
+    user-select: none;
+  }
+
+  /* Responsive for smaller desktops/tablets */
+  @media (max-width: 768px) {
+    body {
+      max-width: 90vw;
+      padding: 0 10px 30px 10px;
+    }
+    header {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 20px;
+    }
+    nav {
+      justify-content: flex-start;
+      gap: 15px;
+      width: 100%;
+    }
+    nav a {
+      font-size: 1rem;
+      padding: 8px 14px;
+    }
+    section {
+      padding: 20px;
+    }
+    section h2 {
+      font-size: 1.7rem;
+    }
+    p, ul {
+      font-size: 1rem;
+    }
+    .section-content {
+      flex-direction: column;
+    }
+    .text-block, .img-block {
+      min-width: 100%;
+    }
+    img.responsive-img {
+      max-height: 280px;
+    }
+  }
+</style>
+</head>
+<body>
+<header>
+  <h1>INDIA</h1>
+  <nav>
+    <a href="#intro">Introduction</a>
+    <a href="#culture">Culture</a>
+    <a href="#geography">Geography</a>
+    <a href="#history">History</a>
+    <a href="#facts">Fun Facts</a>
+  </nav>
+</header>
+
+<section id="intro">
+  <h2>Introduction</h2>
+  <div class="section-content">
+    <div class="text-block">
+      <p>India, officially the Republic of India, is a vast South Asian country known for its rich history, diverse culture, and vibrant heritage. It is the world's second-most populous country and a land of amazing contrasts and incredible beauty.</p>
+    </div>
+    <div class="img-block" aria-label="Indian Flag">
+      <!-- Embedded SVG of Indian flag -->
+      <svg width="320" height="200" viewBox="0 0 30 20" aria-hidden="true" role="img" xmlns="http://www.w3.org/2000/svg">
+        <rect width="30" height="20" fill="#FF9933"/>
+        <rect y="7" width="30" height="6" fill="white"/>
+        <rect y="13" width="30" height="7" fill="#138808"/>
+        <circle cx="15" cy="10" r="3" fill="#000080"/>
+        <circle cx="15" cy="10" r="2.5" fill="none" stroke="#000080" stroke-width="0.3"/>
+        <g stroke="#000080" stroke-width="0.2">
+          <line x1="15" y1="7" x2="15" y2="13"/>
+          <line x1="12.5" y1="10" x2="17.5" y2="10"/>
+          <line x1="13.6" y1="8.4" x2="16.4" y2="11.6"/>
+          <line x1="13.6" y1="11.6" x2="16.4" y2="8.4"/>
+          <line x1="15" y1="10" x2="15" y2="10"/>
+          <!-- 24 spokes rotated 15 degrees each -->
+          <g transform="translate(15,10)">
+            <g id="spokes">
+              <line y1="0" y2="-3"/>
+            </g>
+            <use xlink:href="#spokes" transform="rotate(15)"/>
+            <use xlink:href="#spokes" transform="rotate(30)"/>
+            <use xlink:href="#spokes" transform="rotate(45)"/>
+            <use xlink:href="#spokes" transform="rotate(60)"/>
+            <use xlink:href="#spokes" transform="rotate(75)"/>
+            <use xlink:href="#spokes" transform="rotate(90)"/>
+            <use xlink:href="#spokes" transform="rotate(105)"/>
+            <use xlink:href="#spokes" transform="rotate(120)"/>
+            <use xlink:href="#spokes" transform="rotate(135)"/>
+            <use xlink:href="#spokes" transform="rotate(150)"/>
+            <use xlink:href="#spokes" transform="rotate(165)"/>
+            <use xlink:href="#spokes" transform="rotate(180)"/>
+            <use xlink:href="#spokes" transform="rotate(195)"/>
+            <use xlink:href="#spokes" transform="rotate(210)"/>
+            <use xlink:href="#spokes" transform="rotate(225)"/>
+            <use xlink:href="#spokes" transform="rotate(240)"/>
+            <use xlink:href="#spokes" transform="rotate(255)"/>
+            <use xlink:href="#spokes" transform="rotate(270)"/>
+            <use xlink:href="#spokes" transform="rotate(285)"/>
+            <use xlink:href="#spokes" transform="rotate(300)"/>
+            <use xlink:href="#spokes" transform="rotate(315)"/>
+            <use xlink:href="#spokes" transform="rotate(330)"/>
+            <use xlink:href="#spokes" transform="rotate(345)"/>
+          </g>
+        </g>
+      </svg>
+    </div>
+  </div>
+</section>
+
+<section id="culture">
+  <h2>Culture</h2>
+  <div class="section-content">
+    <div class="img-block">
+      <img class="responsive-img" alt="Indian Classical Dance" src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=600&q=80" tabindex="0" />
+    </div>
+    <div class="text-block">
+      <p>Indian culture is a splendid mix of traditions, languages, festivals, music, dance, art, and cuisine. The diversity spans across religions including Hinduism, Islam, Christianity, Sikhism, Buddhism, and Jainism. Festivals such as Diwali, Holi, Eid, Christmas, and Pongal are celebrated with zeal.</p>
+    </div>
+  </div>
+</section>
+
+<section id="geography">
+  <h2>Geography</h2>
+  <div class="section-content">
+    <div class="text-block">
+      <p>India is bound by the Himalayas in the north and stretches to the Indian Ocean in the south. It features diverse landscapes from the Thar Desert to lush Western Ghats, fertile Indo-Gangetic plains, and dense forests. It shares borders with Pakistan, China, Nepal, Bhutan, Bangladesh, and Myanmar.</p>
+    </div>
+    <div class="img-block">
+      <img class="responsive-img" alt="Himalayas Mountains" src="https://images.unsplash.com/photo-1500534623283-312aade485b7?auto=format&fit=crop&w=600&q=80" tabindex="0" />
+    </div>
+  </div>
+</section>
+
+<section id="history">
+  <h2>History</h2>
+  <div class="section-content">
+    <div class="img-block">
+      <img class="responsive-img" alt="Taj Mahal" src="https://images.unsplash.com/photo-1501594907352-04cda38ebc29?auto=format&fit=crop&w=600&q=80" tabindex="0" />
+    </div>
+    <div class="text-block">
+      <p>India's history dates back thousands of years, home to one of the world's oldest civilizations, the Indus Valley Civilization. It was shaped by empires like Maurya, Gupta, Mughal, and British colonial rule before gaining independence in 1947. India is now the world's largest democracy.</p>
+    </div>
+  </div>
+</section>
+
+<section id="facts">
+  <h2>Fun Facts</h2>
+  <ul>
+    <li>India has 22 officially recognized languages and hundreds of dialects.</li>
+    <li>The national animal is the Bengal Tiger.</li>
+    <li>The game of chess originated in India.</li>
+    <li>India is the largest producer of milk in the world.</li>
+    <li>Yoga, an ancient Indian practice, is followed worldwide today.</li>
+  </ul>
+</section>
+
+<footer>
+  &copy; 2024 India Website - Made with ❤️
+</footer>
+
+<script>
+  // Smooth scroll for navigation links
+  document.querySelectorAll('nav a').forEach(anchor => {
+    anchor.addEventListener('click', e => {
+      e.preventDefault();
+      const targetId = anchor.getAttribute('href').substring(1);
+      const section = document.getElementById(targetId);
+      if (section) {
+        section.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      }
+    });
+  });
+</script>
+</body>
+</html>
+</content>
+</create_file>
